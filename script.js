@@ -16,44 +16,34 @@ window.addEventListener('DOMContentLoaded', () => {
 // Botón para resetear todo el progreso
 const resetBtn = document.getElementById('resetear');
 resetBtn.addEventListener('click', () => {
-  // Quitar todas las clases aprobadas y desbloqueos
   document.querySelectorAll('.materia').forEach(materia => {
     materia.classList.remove('aprobada');
   });
-  // Bloquear todos excepto el primero de nuevo
-  bloquearSemestres();
-  // Guardar estado vacío
+
   localStorage.removeItem('materiasAprobadas');
+  bloquearSemestres();
 });
 
-// Agregamos el evento click a todas las materias para poder tacharlas o destacharlas
+// Agregar evento clic a cada materia
 document.querySelectorAll('.materia').forEach(materia => {
   materia.addEventListener('click', () => {
-    // Si la materia está bloqueada, no permitimos que se tache o destache
     if (materia.classList.contains('bloqueada')) return;
 
-    // Alternamos la clase 'aprobada' para marcar o desmarcar la materia (tacharla o quitar tachado)
     materia.classList.toggle('aprobada');
-
-    // Guardamos en localStorage las materias que actualmente están tachadas, para persistir el estado
     guardarMateriasAprobadas();
-
-    // Recalculamos si algún semestre se completó para desbloquear el siguiente
     revisarSemestres();
-
-    // Aplicamos el bloqueo o desbloqueo de semestres según la situación actual
     bloquearSemestres();
   });
 });
 
-// Guarda el estado de las materias tachadas en localStorage para mantenerlo entre recargas
+// Guardar materias tachadas en localStorage
 function guardarMateriasAprobadas() {
   const aprobadas = Array.from(document.querySelectorAll('.materia.aprobada'))
     .map(m => m.id);
   localStorage.setItem('materiasAprobadas', JSON.stringify(aprobadas));
 }
 
-// Revisa cada semestre para verificar si todas sus materias están tachadas, para entonces desbloquear el siguiente semestre
+// Revisar y desbloquear siguiente semestre si el actual está completamente aprobado
 function revisarSemestres() {
   const semestres = document.querySelectorAll('.semestre');
 
@@ -72,7 +62,7 @@ function revisarSemestres() {
   });
 }
 
-// ✅ CORREGIDO: Bloquea los semestres solo si aún no han sido aprobados
+// Bloquear o desbloquear semestres según progreso
 function bloquearSemestres() {
   const semestres = document.querySelectorAll('.semestre');
 
@@ -80,7 +70,7 @@ function bloquearSemestres() {
     const materias = semestre.querySelectorAll('.materia');
     const aprobadas = semestre.querySelectorAll('.materia.aprobada');
 
-    if (i === 0 || aprobadas.length === materias.length) {
+    if (i === 0 || aprobadas.length === materias.length || !semestre.classList.contains('bloqueado')) {
       semestre.classList.remove('bloqueado');
       semestre.classList.remove('semi-transparente');
       desbloquearMaterias(semestre);
@@ -92,14 +82,14 @@ function bloquearSemestres() {
   });
 }
 
-// Añade la clase 'bloqueada' a todas las materias dentro de un semestre para que no respondan a clic
+// Bloquear todas las materias de un semestre
 function bloquearMaterias(semestre) {
   semestre.querySelectorAll('.materia').forEach(m => {
     m.classList.add('bloqueada');
   });
 }
 
-// Quita la clase 'bloqueada' para permitir que las materias puedan ser clicadas
+// Desbloquear todas las materias de un semestre
 function desbloquearMaterias(semestre) {
   semestre.querySelectorAll('.materia').forEach(m => {
     m.classList.remove('bloqueada');
