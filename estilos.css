@@ -1,39 +1,49 @@
+/* Estilo general */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff0f5;
-  margin: 0;
-  padding: 20px;
+  background-color: #fff0f5; /* rosa claro */
   color: #333;
   text-align: center;
+  padding: 20px;
 }
 
 h1 {
-  color: #d63384;
+  color: #d63384; /* rosa intenso */
   margin-bottom: 30px;
 }
 
+/* Contenedor general */
 .malla {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
 }
 
+/* Estilo para cada semestre */
 .semestre {
   background-color: #ffe6f0;
   border: 2px solid #ffc0cb;
   border-radius: 15px;
-  padding: 20px;
-  width: 300px;
+  padding: 15px;
+  width: 280px;
+  transition: all 0.3s ease;
 }
 
+/* Ocultar semestre por defecto */
+.oculto {
+  display: none;
+}
+
+/* Título del semestre */
 .semestre h2 {
   color: #d63384;
   margin-bottom: 15px;
 }
 
+/* Cada materia */
 .materia {
-  background-color: #f48fb1;
+  background-color: #f48fb1; /* rosa medio */
   color: white;
   padding: 10px 15px;
   border-radius: 10px;
@@ -42,17 +52,15 @@ h1 {
   transition: background-color 0.3s, transform 0.2s;
 }
 
+/* Hover sobre materia */
 .materia:hover {
   transform: scale(1.03);
 }
 
+/* Cuando una materia está aprobada */
 .materia.aprobada {
-  background-color: #c2185b;
+  background-color: #6a1b9a; /* morado oscuro */
   text-decoration: line-through;
-}
-
-.materia.bloqueada {
-  background-color: #f8bbd0;
-  opacity: 0.6;
-  cursor: not-allowed;
+  color: white;
+  opacity: 1;
 }
