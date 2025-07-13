@@ -2,7 +2,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malla GIG Interactiva</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
