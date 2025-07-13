@@ -1,32 +1,25 @@
 document.querySelectorAll('.materia').forEach(materia => {
   materia.addEventListener('click', () => {
-    if (materia.classList.contains('bloqueada')) return;
-
     materia.classList.toggle('aprobada');
-    actualizarDisponibilidad();
+    revisarSemestres();
   });
 });
 
-function actualizarDisponibilidad() {
-  document.querySelectorAll('.materia').forEach(materia => {
-    const requisitos = materia.getAttribute('data-prerequisitos');
-    if (!requisitos) return;
+function revisarSemestres() {
+  const semestres = document.querySelectorAll('.semestre');
+  semestres.forEach((semestre, i) => {
+    const materias = semestre.querySelectorAll('.materia');
+    const aprobadas = semestre.querySelectorAll('.materia.aprobada');
 
-    const ids = requisitos.split(',');
-    const cumplidos = ids.every(id => {
-      const prereq = document.getElementById(id.trim());
-      return prereq && prereq.classList.contains('aprobada');
-    });
-
-    if (cumplidos) {
-      materia.classList.remove('bloqueada');
-    } else {
-      if (!materia.classList.contains('aprobada')) {
-        materia.classList.add('bloqueada');
-      }
+    // Si todas las materias están aprobadas y existe un siguiente semestre, lo mostramos
+    if (materias.length > 0 && aprobadas.length === materias.length) {
+      const siguiente = semestres[i + 1];
+      if (siguiente) siguiente.classList.remove('oculto');
     }
   });
 }
 
-// Inicializar estado bloqueado
-actualizarDisponibilidad();
+// Ocultar todos los semestres excepto el primero
+document.querySelectorAll('.semestre').forEach((semestre, i) => {
+  if (i > 0) semestre.classList.add('oculto');
+});
