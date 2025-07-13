@@ -1,0 +1,58 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  color: #d63384;
+  margin-bottom: 30px;
+}
+
+.malla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.semestre {
+  background-color: #ffe6f0;
+  border: 2px solid #ffc0cb;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+}
+
+.semestre h2 {
+  color: #d63384;
+  margin-bottom: 15px;
+}
+
+.materia {
+  background-color: #f48fb1;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.materia:hover {
+  transform: scale(1.03);
+}
+
+.materia.aprobada {
+  background-color: #c2185b;
+  text-decoration: line-through;
+}
+
+.materia.bloqueada {
+  background-color: #f8bbd0;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
