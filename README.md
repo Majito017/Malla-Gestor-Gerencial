@@ -8,6 +8,7 @@
     .materia:focus {
       outline: none;
     }
+  <a href="#" style="font-size: 0px; color: transparent;">Resetear Malla</a>
   </style>
 </head>
 <body>
@@ -17,6 +18,7 @@
 
     
   <button id="resetear">🔁 Resetear Malla</button>
+  
     <!-- Semestre 1 -->
     <div class="semestre">
       <h2>Semestre 1</h2>
