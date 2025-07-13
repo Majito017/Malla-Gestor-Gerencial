@@ -92,3 +92,10 @@ button#resetear {
   pointer-events: none;
   opacity: 0.5;
 }
+
+#resetear {
+  opacity: 0;
+  pointer-events: auto;
+  position: absolute;
+  z-index: 10;
+}
