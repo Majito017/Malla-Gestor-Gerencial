@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <h1>Malla Interactiva - GIG 2024</h1>
+  <h1> Universidad Laica Eloy Alfaro de Manabí </h1>
   <div class="malla">
     <!-- Semestre 1 -->
     <div class="semestre">
