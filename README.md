@@ -85,5 +85,6 @@
   <div class="materia" id="esp1501_2">ENGLISH FOR SPECIFIC PURPOSE II</div>
 </div>
 
-  </div>  <!-- Enlace correcto al script JS -->  <script src="script.js"></script></body>
+  </div>  <!-- Enlace correcto al script JS -->  <script src="script.js"></script>
+  </body>
 </html>
