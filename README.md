@@ -1,14 +1,7 @@
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilos.css">
-<style>
-    /* quitar cuadro azul (outline) al hacer clic en materias */
-    .materia:focus {
-      outline: none;
-    }
-  </style>
 </head>
 <body>
   <h1> Universidad Laica Eloy Alfaro de Manabí </h1>
@@ -17,7 +10,6 @@
 
     
   <button id="resetear">🔁 Resetear Malla</button>
-  
     <!-- Semestre 1 -->
     <div class="semestre">
       <h2>Semestre 1</h2>
