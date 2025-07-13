@@ -11,7 +11,7 @@ h1 {
   color: #d63384; /* rosa intenso */
   margin-bottom: 30px;
 }
-
+/* Botón resetear */
 button#resetear {
   background-color: #f48fb1; /* rosa medio */
   border: none;
