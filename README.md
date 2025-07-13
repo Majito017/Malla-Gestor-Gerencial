@@ -8,7 +8,6 @@
     .materia:focus {
       outline: none;
     }
-  <a href="#" style="font-size: 0px; color: transparent;">Resetear Malla</a>
   </style>
 </head>
 <body>
