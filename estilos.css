@@ -93,8 +93,8 @@ button#resetear {
   opacity: 0.5;
 }
 
-#resetear {
-  opacity: 0;
+#resetear malla {
+  visibility: hidden;
   pointer-events: auto;
   position: absolute;
   z-index: 10;
