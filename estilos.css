@@ -11,6 +11,7 @@ h1 {
   color: #d63384; /* rosa intenso */
   margin-bottom: 30px;
 }
+
 /* Botón resetear */
 button#resetear {
   background-color: #f48fb1; /* rosa medio */
@@ -38,11 +39,26 @@ button#resetear {
   padding: 15px;
   width: 280px;
   transition: all 0.3s ease;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-/* Ocultar semestre por defecto (si lo usas) */
-.oculto {
-  display: none;
+/* Semestre desbloqueado: opacidad total y clickeable */
+.semestre:not(.bloqueado) {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* Semestre bloqueado: opacidad reducida y no clickeable */
+.semestre.bloqueado {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Semestre con opacidad para indicar bloqueo (extra suavizado) */
+.semi-transparente {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
 }
 
 /* Título del semestre */
@@ -60,6 +76,7 @@ button#resetear {
   margin: 8px 0;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
+  user-select: none;
 }
 
 .materia:hover {
@@ -75,27 +92,9 @@ button#resetear {
   text-decoration-thickness: 2.5px !important;
 }
 
-/* Semestre bloqueado: opacidad y no clickeable */
-.semestre.bloqueado {
-  pointer-events: none;
-}
-
-/* Semestre con opacidad para indicar bloqueo */
-.semi-transparente {
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-}
-
 /* Materias bloqueadas: puntero de no permitido, opacidad y sin clic */
 .materia.bloqueada {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.5;
-}
-
-#resetear malla {
-  visibility: hidden;
-  pointer-events: auto;
-  position: absolute;
-  z-index: 10;
 }
