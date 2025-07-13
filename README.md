@@ -83,8 +83,9 @@
   <div class="materia" id="gig902">EVALUACIÓN DE PROGRAMAS INFORMACIONALES</div>
   <div class="materia" id="gig904">BUSINESS INTELLIGENCE</div>
   <div class="materia" id="esp1501_2">ENGLISH FOR SPECIFIC PURPOSE II</div>
-</div>
 
-  </div>  <!-- Enlace correcto al script JS -->  <script src="script.js"></script>
-  </body>
+</div>
+</div>  
+<script src="script.js"></script>
+</body>
 </html>
