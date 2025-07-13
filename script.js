@@ -72,21 +72,22 @@ function revisarSemestres() {
   });
 }
 
-// Controla el bloqueo y desbloqueo de los semestres y sus materias
+// ✅ CORREGIDO: Bloquea los semestres solo si aún no han sido aprobados
 function bloquearSemestres() {
   const semestres = document.querySelectorAll('.semestre');
 
   semestres.forEach((semestre, i) => {
-    if (i === 0) {
+    const materias = semestre.querySelectorAll('.materia');
+    const aprobadas = semestre.querySelectorAll('.materia.aprobada');
+
+    if (i === 0 || aprobadas.length === materias.length) {
       semestre.classList.remove('bloqueado');
       semestre.classList.remove('semi-transparente');
       desbloquearMaterias(semestre);
     } else {
-      if (!semestre.classList.contains('bloqueado') && !semestre.classList.contains('semi-transparente')) {
-        semestre.classList.add('bloqueado');
-        semestre.classList.add('semi-transparente');
-        bloquearMaterias(semestre);
-      }
+      semestre.classList.add('bloqueado');
+      semestre.classList.add('semi-transparente');
+      bloquearMaterias(semestre);
     }
   });
 }
