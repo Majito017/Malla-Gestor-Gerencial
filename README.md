@@ -85,6 +85,6 @@
   <div class="materia" id="esp1501_2">ENGLISH FOR SPECIFIC PURPOSE II</div>
 
   </div>
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
