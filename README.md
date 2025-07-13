@@ -1,4 +1,3 @@
-<!DOCTYPE html><html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,27 +14,30 @@
       <div class="materia" id="GIG-102" data-prerequisitos="">Introducción a los Sistemas de Información</div>
       <div class="materia" id="GIG-104" data-prerequisitos="">Ofimática</div>
       <div class="materia" id="GIG-204" data-prerequisitos="">Ética y Responsabilidad Social en la Información</div>
+      <div class="materia" id="GIG-204" data-prerequisitos="">Catedrá Alfaro</div>
     </div>
     <!-- Semestre 2 -->
     <div class="semestre">
       <h2>Semestre 2</h2>
       <div class="materia bloqueada" id="GIG-201" data-prerequisitos="GIG-101">Gestión Organizacional</div>
       <div class="materia bloqueada" id="GIG-202" data-prerequisitos="GIG-101">Marco Constitucional y Derecho Administrativo</div>
-      <div class="materia bloqueada" id="GIG-205" data-prerequisitos="GIG-204">Cátedra Alfaro</div>
+      <div class="materia bloqueada" id="GIG-307" data-prerequisitos="GIG-102">Memoria, Patrimonio y Uso de la Información</div>
+       <div class="materia bloqueada" id="GIG-302" data-prerequisitos="GIG-201">Estadística Descriptiva</div>
     </div>
     <!-- Semestre 3 -->
     <div class="semestre">
       <h2>Semestre 3</h2>
-      <div class="materia bloqueada" id="GIG-302" data-prerequisitos="GIG-201">Estadística Descriptiva</div>
-      <div class="materia bloqueada" id="GIG-305" data-prerequisitos="GIG-104">Metodología de Investigación</div>
-      <div class="materia bloqueada" id="GIG-307" data-prerequisitos="GIG-102">Memoria, Patrimonio y Uso de la Información</div>
+      <div class="materia bloqueada" id="GIG-406" data-prerequisitos="GIG-201">Gestión de Procesos</div>
+       <div class="materia bloqueada" id="GIG-405" data-prerequisitos="GIG-302">Estadística Inferencial</div>
+      <div class="materia bloqueada" id="GIG-401" data-prerequisitos="GIG-308">Sistemas de Información y Gestión Documental</div>
       <div class="materia bloqueada" id="GIG-308" data-prerequisitos="GIG-102">Gestión de la Información</div>
-      <div class="materia bloqueada" id="ESB-5202" data-prerequisitos="">(Materia indefinida)</div>
+      <div class="materia bloqueada" id="GIG-305" data-prerequisitos="GIG-104">Metodología de Investigación</div>
+      
     </div>
     <!-- Semestre 4 -->
     <div class="semestre">
       <h2>Semestre 4</h2>
-      <div class="materia bloqueada" id="GIG-401" data-prerequisitos="GIG-308">Sistemas de Información y Gestión Documental</div>
+      <div class="materia bloqueada" id="GIG-601" data-prerequisitos="GIG-502">Sistemas de Información Digital</div>
       <div class="materia bloqueada" id="GIG-405" data-prerequisitos="GIG-302">Estadística Inferencial</div>
       <div class="materia bloqueada" id="GIG-406" data-prerequisitos="GIG-201">Gestión de Procesos</div>
       <div class="materia bloqueada" id="GIG-407" data-prerequisitos="GIG-305">Evaluación de Programas Informacionales</div>
