@@ -1,8 +1,9 @@
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malla GIG Interactiva</title>
-  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
   <h1>Malla Interactiva - GIG 2024</h1>
@@ -10,73 +11,80 @@
     <!-- Semestre 1 -->
     <div class="semestre">
       <h2>Semestre 1</h2>
-      <div class="materia" id="GIG-101" data-prerequisitos="">Sociedad de la Información y el Conocimiento</div>
-      <div class="materia" id="GIG-102" data-prerequisitos="">Introducción a los Sistemas de Información</div>
-      <div class="materia" id="GIG-104" data-prerequisitos="">Ofimática</div>
-      <div class="materia" id="GIG-204" data-prerequisitos="">Ética y Responsabilidad Social en la Información</div>
-      <div class="materia" id="GIG-204" data-prerequisitos="">Catedrá Alfaro</div>
-    </div>
-    <!-- Semestre 2 -->
-    <div class="semestre">
-      <h2>Semestre 2</h2>
-      <div class="materia bloqueada" id="GIG-201" data-prerequisitos="GIG-101">Gestión Organizacional</div>
-      <div class="materia bloqueada" id="GIG-202" data-prerequisitos="GIG-101">Marco Constitucional y Derecho Administrativo</div>
-      <div class="materia bloqueada" id="GIG-307" data-prerequisitos="GIG-102">Memoria, Patrimonio y Uso de la Información</div>
-       <div class="materia bloqueada" id="GIG-302" data-prerequisitos="GIG-201">Estadística Descriptiva</div>
-    </div>
-    <!-- Semestre 3 -->
-    <div class="semestre">
-      <h2>Semestre 3</h2>
-      <div class="materia bloqueada" id="GIG-406" data-prerequisitos="GIG-201">Gestión de Procesos</div>
-       <div class="materia bloqueada" id="GIG-405" data-prerequisitos="GIG-302">Estadística Inferencial</div>
-      <div class="materia bloqueada" id="GIG-401" data-prerequisitos="GIG-308">Sistemas de Información y Gestión Documental</div>
-      <div class="materia bloqueada" id="GIG-308" data-prerequisitos="GIG-102">Gestión de la Información</div>
-      <div class="materia bloqueada" id="GIG-305" data-prerequisitos="GIG-104">Metodología de Investigación</div>
-      
-    </div>
-    <!-- Semestre 4 -->
-    <div class="semestre">
-      <h2>Semestre 4</h2>
-      <div class="materia bloqueada" id="GIG-601" data-prerequisitos="GIG-502">Sistemas de Información Digital</div>
-      <div class="materia bloqueada" id="GIG-405" data-prerequisitos="GIG-302">Estadística Inferencial</div>
-      <div class="materia bloqueada" id="GIG-406" data-prerequisitos="GIG-201">Gestión de Procesos</div>
-      <div class="materia bloqueada" id="GIG-407" data-prerequisitos="GIG-305">Evaluación de Programas Informacionales</div>
-    </div>
-    <!-- Semestre 5 -->
-    <div class="semestre">
-      <h2>Semestre 5</h2>
-      <div class="materia bloqueada" id="GIG-501" data-prerequisitos="GIG-202">Gobierno Electrónico y Administración Pública</div>
-      <div class="materia bloqueada" id="GIG-502" data-prerequisitos="GIG-401">Gestión Documental y Archivística</div>
-      <div class="materia bloqueada" id="GIG-505" data-prerequisitos="GIG-407">Prácticas Preprofesionales I</div>
-      <div class="materia bloqueada" id="GIG-506" data-prerequisitos="GIG-104">Herramientas Digitales Avanzadas</div>
-    </div>
-    <!-- Semestre 6 -->
-    <div class="semestre">
-      <h2>Semestre 6</h2>
-      <div class="materia bloqueada" id="GIG-601" data-prerequisitos="GIG-502">Sistemas de Información Digital</div>
-      <div class="materia bloqueada" id="GIG-803" data-prerequisitos="GIG-308">Modelos de Gestión de Información</div>
-      <div class="materia bloqueada" id="GIG-704" data-prerequisitos="GIG-407">Alfabetización y Competencias Informacionales</div>
-      <div class="materia bloqueada" id="GIG-605" data-prerequisitos="GIG-405">Análisis Cuantitativo de la Información</div>
-      <div class="materia bloqueada" id="GIG-604" data-prerequisitos="GIG-406">Planificación Estratégica</div>
-    </div>
-    <!-- Semestre 7 -->
-    <div class="semestre">
-      <h2>Semestre 7</h2>
-      <div class="materia bloqueada" id="GIG-706" data-prerequisitos="GIG-605">Análisis Cualitativo de la Información</div>
-      <div class="materia bloqueada" id="GIG-707" data-prerequisitos="">English for Specific Purpose I</div>
-      <div class="materia bloqueada" id="GIG-901" data-prerequisitos="GIG-406">Gestión de Proyectos</div>
-      <div class="materia bloqueada" id="ESP-1501.1" data-prerequisitos="GIG-706">Decision Making in Management</div>
-    </div>
-    <!-- Semestre 8 -->
-    <div class="semestre">
-      <h2>Semestre 8</h2>
-      <div class="materia bloqueada" id="GIG-902" data-prerequisitos="ESP-1501.1">Business Intelligence</div>
-      <div class="materia bloqueada" id="GIG-903" data-prerequisitos="GIG-803">Gestión del Conocimiento</div>
-      <div class="materia bloqueada" id="GIG-804" data-prerequisitos="GIG-704">Evaluación de Modelos de Gestión de Información</div>
-      <div class="materia bloqueada" id="GIG-805" data-prerequisitos="GIG-505">Trabajo de Integración Curricular - Informe</div>
-      <div class="materia bloqueada" id="FIP-6302-2" data-prerequisitos="GIG-707">English for Specific Purpose II</div>
-      <div class="materia bloqueada" id="FIP-6302-1" data-prerequisitos="GIG-805">Trabajo de Integración Curricular - Diseño</div>
-    </div>
+      <div class="materia" id="GIG-101">SOCIEDAD DE LA INFORMACIÓN Y EL CONOCIMIENTO<br><small>COD: GIG-101</small></div>
+      <div class="materia" id="GIG-102">INTRODUCCIÓN A LOS SISTEMAS DE INFORMACIÓN<br><small>COD: GIG-102</small></div>
+      <div class="materia" id="GIG-204">ÉTICA Y RESPONSABILIDAD SOCIAL EN LA INFORMACIÓN<br><small>COD: GIG-204</small></div>
+      <div class="materia" id="GIG-104">OFIMÁTICA<br><small>COD: GIG-104</small></div>
+      <div class="materia" id="9901V01-R22">CÁTEDRA ALFARO<br><small>COD: 9901V01-R22</small></div>
+    </div><!-- Semestre 2 -->
+<div class="semestre">
+  <h2>Semestre 2</h2>
+  <div class="materia" id="GIG-201">GESTIÓN ORGANIZACIONAL<br><small>COD: GIG-201</small></div>
+  <div class="materia" id="GIG-202">MARCO CONSTITUCIONAL Y DERECHO ADMINISTRATIVO ECUATORIANO<br><small>COD: GIG-202</small></div>
+  <div class="materia" id="GIG-205">MEMORIA, PATRIMONIO Y USO DE LA INFORMACIÓN<br><small>COD: GIG-205</small></div>
+  <div class="materia" id="ESB-1209">ESTADÍSTICA DESCRIPTIVA<br><small>COD: ESB-1209</small></div>
+</div>
+
+<!-- Semestre 3 -->
+<div class="semestre">
+  <h2>Semestre 3</h2>
+  <div class="materia" id="GIG-302">GESTIÓN DE PROCESOS<br><small>COD: GIG-302</small></div>
+  <div class="materia" id="GIG-305">ESTADÍSTICA INFERENCIAL<br><small>COD: GIG-305</small></div>
+  <div class="materia" id="GIG-307">SISTEMAS DE INFORMACIÓN Y GESTIÓN DOCUMENTAL<br><small>COD: GIG-307</small></div>
+  <div class="materia" id="GIG-308">GESTIÓN DE LA INFORMACIÓN<br><small>COD: GIG-308</small></div>
+  <div class="materia" id="ESB-5202">METODOLOGÍA DE INVESTIGACIÓN<br><small>COD: ESB-5202</small></div>
+</div>
+
+<!-- Semestre 4 -->
+<div class="semestre">
+  <h2>Semestre 4</h2>
+  <div class="materia" id="GIG-401">SISTEMAS DE INFORMACIÓN DIGITAL<br><small>COD: GIG-401</small></div>
+  <div class="materia" id="GIG-405">HERRAMIENTAS DIGITALES AVANZADAS PARA LA GESTIÓN DE LA INFORMACIÓN<br><small>COD: GIG-405</small></div>
+  <div class="materia" id="GIG-406">GOBIERNO ELECTRÓNICO Y ADMINISTRACIÓN PÚBLICA<br><small>COD: GIG-406</small></div>
+  <div class="materia" id="GIG-407">GESTIÓN DOCUMENTAL Y ARCHIVÍSTICA<br><small>COD: GIG-407</small></div>
+  <div class="materia" id="GIG-PP-01">PRÁCTICAS PREPROFESIONALES I<br><small>COD: GIG-PP-01</small></div>
+</div>
+
+<!-- Semestre 5 -->
+<div class="semestre">
+  <h2>Semestre 5</h2>
+  <div class="materia" id="GIG-501">PLANIFICACIÓN ESTRATÉGICA<br><small>COD: GIG-501</small></div>
+  <div class="materia" id="GIG-502">ALFABETIZACIÓN Y COMPETENCIAS INFORMACIONALES<br><small>COD: GIG-502</small></div>
+  <div class="materia" id="GIG-505">ANÁLISIS CUANTITATIVO DE LA INFORMACIÓN<br><small>COD: GIG-505</small></div>
+  <div class="materia" id="GIG-506">MODELOS GESTIÓN DE INFORMACIÓN<br><small>COD: GIG-506</small></div>
+  <div class="materia" id="GIG-601">CALIDAD TOTAL DE LA INFORMACIÓN<br><small>COD: GIG-601</small></div>
+  <div class="materia" id="GIG-PP-01-II">PRÁCTICAS PREPROFESIONALES II<br><small>COD: GIG-PP-01</small></div>
+</div>
+
+<!-- Semestre 6 -->
+<div class="semestre">
+  <h2>Semestre 6</h2>
+  <div class="materia" id="GIG-604">ANÁLISIS CUALITATIVO DE LA INFORMACIÓN<br><small>COD: GIG-604</small></div>
+  <div class="materia" id="GIG-605">ANÁLISIS DE MODELOS INSTITUCIONALES EN LA GESTIÓN INFORMACIONAL<br><small>COD: GIG-605</small></div>
+  <div class="materia" id="GIG-704">DISEÑO Y EVALUACIÓN DE PROYECTOS DE INVESTIGACIÓN<br><small>COD: GIG-704</small></div>
+  <div class="materia" id="GIG-803">SISTEMAS GESTORES DE BASES DE DATOS<br><small>COD: GIG-803</small></div>
+  <div class="materia" id="GIG-903">GESTIÓN DEL CONOCIMIENTO<br><small>COD: GIG-903</small></div>
+</div>
+
+<!-- Semestre 7 -->
+<div class="semestre">
+  <h2>Semestre 7</h2>
+  <div class="materia" id="GIG-706">EVALUACIÓN DE MODELOS DE GESTIÓN DE INFORMACIÓN<br><small>COD: GIG-706</small></div>
+  <div class="materia" id="GIG-707">DECISION MAKING IN MANAGEMENT<br><small>COD: GIG-707</small></div>
+  <div class="materia" id="GIG-901">GESTIÓN DE PROYECTOS<br><small>COD: GIG-901</small></div>
+  <div class="materia" id="ESP-1501-1">ENGLISH FOR SPECIFIC PURPOSE I<br><small>COD: ESP-1501.1</small></div>
+</div>
+
+<!-- Semestre 8 -->
+<div class="semestre">
+  <h2>Semestre 8</h2>
+  <div class="materia" id="GIG-805">INFORMATION ARCHITECTURE<br><small>COD: GIG-805</small></div>
+  <div class="materia" id="GIG-804">BUSINESS ENGLISH<br><small>COD: GIG-804</small></div>
+  <div class="materia" id="GIG-902">EVALUACIÓN DE PROGRAMAS INFORMACIONALES<br><small>COD: GIG-902</small></div>
+  <div class="materia" id="GIG-904">BUSINESS INTELLIGENCE<br><small>COD: GIG.904</small></div>
+  <div class="materia" id="ESP-1501-2">ENGLISH FOR SPECIFIC PURPOSE II<br><small>COD: ESP-1501.2</small></div>
+</div>
+
   </div>
   <script src="script.js"></script>
 </body>
