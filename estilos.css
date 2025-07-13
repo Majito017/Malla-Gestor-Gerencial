@@ -13,7 +13,16 @@ h1 {
 }
 
 button#resetear {
-/* Contenedor general */
+  background-color: #f48fb1; /* rosa medio */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
 .malla {
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +40,7 @@ button#resetear {
   transition: all 0.3s ease;
 }
 
-/* Ocultar semestre por defecto */
+/* Ocultar semestre por defecto (si lo usas) */
 .oculto {
   display: none;
 }
@@ -42,7 +51,7 @@ button#resetear {
   margin-bottom: 15px;
 }
 
-/* Cada materia */
+/* Materias */
 .materia {
   background-color: #f48fb1; /* rosa medio */
   color: white;
@@ -53,15 +62,33 @@ button#resetear {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Hover sobre materia */
 .materia:hover {
   transform: scale(1.03);
 }
 
-/* Cuando una materia está aprobada */
+/* Materia aprobada: fondo morado, línea tachada negra gruesa */
 .materia.aprobada {
-  background-color: #6a1b9a; /* morado oscuro */
-  text-decoration: line-through;
+  background-color: #6a1b9a !important;
   color: white;
-  opacity: 1;
+  text-decoration-line: line-through !important;
+  text-decoration-color: black !important;
+  text-decoration-thickness: 2.5px !important;
+}
+
+/* Semestre bloqueado: opacidad y no clickeable */
+.semestre.bloqueado {
+  pointer-events: none;
+}
+
+/* Semestre con opacidad para indicar bloqueo */
+.semi-transparente {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+/* Materias bloqueadas: puntero de no permitido, opacidad y sin clic */
+.materia.bloqueada {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
 }
